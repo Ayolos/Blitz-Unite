@@ -1,1 +1,25 @@
-
+@startuml
+Actor Utilisateur
+Utilisateur -> Application: lancement()
+Application -> Utilisateur: autorisation
+Utilisateur -> Application: accès formulaire
+Application -> Utilisateur: réponse de validité
+Utilisateur -> Application: remplir le formulaire
+Application -> Utilisateur: réponse de validité
+Utilisateur -> Application: fournir le fichier de l'oeuvre
+Database database
+Application -> database: envoyer le fichier
+Application -> Utilisateur: réponse de validité
+Application -> Application: Générer le fichier JSON
+Application -> database: envoyer le fichier
+Application -> Utilisateur: réponse de validité
+Actor Bibliothécaire as b
+b -> Application: lire l'oeuvre
+Application -> database: requête sur l'oeuvre
+Application -> b: envoyer oeuvre
+b -> b: vérifier la véracité de l'oeuvre
+b -> Application: modifier les informations
+Application -> database: envoyer les informations changées
+Application -> Application: chiffrement si nécessaire
+Application -> Utilisateur: envoyer message
+@enduml
