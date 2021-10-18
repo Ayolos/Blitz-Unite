@@ -1,0 +1,34 @@
+@startuml
+actor utilisateur
+utilisateur -> application: authentification
+application --> utilisateur: réponse d'authentification
+
+utilisateur -> application: clique sur le repertoire sequestre
+application --> utilisateur: affiche la page sequestre
+
+database database
+application -> database: requête pour afficher la liste des oeuvre sous droit
+database -> database: trier
+database --> utilisateur: afficher liste des oeuvres (page sequestre)
+utilisateur -> application: clique sur louer
+application -> database: requête sur l'utilisateur
+database -> database: verifie si membre
+application -> database: verifie si oeuvre louer -3 fois
+actor clock
+alt oui
+  application -> application: ajoute date de validité a l'oeuvre
+  application -> application: getDateNow
+  application -> clock: envoie date actuel + 2 semaines
+  clock -> clock: verifie date
+  clock --> application: date limite atteinte
+  application -> application: suppressOeuvre
+  application -> database: envoie date de validité
+  database --> application: oeuvre ajouté dans l'onglet "emprunt"
+  application --> utilisateur: afficher oeuvre ajouter
+
+else non
+  database --> application: non
+  application --> utilisateur: afficher message impossible de louer
+
+end
+@enduml
