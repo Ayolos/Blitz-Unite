@@ -14,4 +14,3 @@
     8. Sinon, la bibliothèque met une date de validité à l'oeuvre
     9. L'utilisateur a accès à son oeuvre dans la rubrique "emprunts" 
     10. À la fin de la date de validité, l'oeuvre est supprimée du répertoire du membre
-
