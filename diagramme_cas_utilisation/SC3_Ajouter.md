@@ -1,4 +1,4 @@
-**Titre** : Ajout d’une œuvre
+**Titre** : Ajout d’une œuvre  
 **Description** : Ajout d’une œuvre de tout type via l’application logiciel par l’utilisateur
 **Acteurs** : Membre de la bibliothèque et bibliothécaire
 **Prérequis** : Aucun
