@@ -1,9 +1,7 @@
 | Terme  | Définition  |
 |---|---|
 | Association CultureDiffusion  | C'est une association   |
-| Bibliothèque numérique | Une bibliothèque numérique (ou en ligne ou
-électronique) est un ensemble d'écrits numérisés et
-accessibles à distance (en particulier via Internet) |
+| Bibliothèque numérique | Une bibliothèque numérique (ou en ligne ou électronique) est un ensemble d'écrits numérisés et accessibles à distance (en particulier via Internet) |
 | Gestion décentralisée  | Chacun a une partie de l'application  |
 | les oeuvres | Ensemble des livres, musiques et vidéos contenant aussi un fichier json  |
 | Emprunt | Utilisation d'une oeuvre par un membre  |
