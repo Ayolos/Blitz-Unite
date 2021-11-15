@@ -1,0 +1,26 @@
+@startuml
+class Oeuvre
+class Application
+class Connexion
+
+Connexion : sendFile()
+
+Oeuvre : connexion()
+Oeuvre : type
+Oeuvre : nom
+
+Utilisateur : connexion()
+Utilisateur : nom
+Utilisateur : prénom
+Utilisateur : rôle
+
+Application : lancement()
+Application : genJSON()
+Application : sendMessage()
+
+Connexion - Oeuvre
+Connexion - Application
+Connexion - Utilisateur
+Oeuvre *- Application
+Application -* Utilisateur
+@enduml
