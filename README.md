@@ -17,9 +17,6 @@ Lors du projet nous avons utilisé des outils techniques tels que **PlantUML** p
   - diagramme de classes
 
 Pour réaliser ses différents moyens techniques et mettre en place ces méthodes, l'équipe de Blitz Unite composé de Rémi Fraszczak, Antonin Sanzovo, Antoine Andre et  Lucas Carlier on réfléchit à trouver la meilleur solution possible pour répondre au besoin de CultureDiffusion.
-Lucas Carlier qui est le chef du projet a pour but de réaliser le glossaire, listez les scénarios de l'application ainsi que le choix de l'architecture.
-Antoine Andre et Rémi Fraszczak sont des développeurs, ils réaliseront les différents diagrammes (classe, cas d'utilisations...).
-Antonin Sanzovo est le product owner, qui est chargé des échanges avec notre client, il détaillera les designs patterns utilisés et triera les scénarios par ordre d'importance.
 
 Conçu par Rémi Fraszczak, Antonin Sanzovo, Antoine Andre, Lucas Carlier de Blitz Unite.
 
