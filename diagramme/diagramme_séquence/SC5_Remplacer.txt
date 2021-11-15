@@ -6,13 +6,13 @@ Utilisateur -> Application: Clique sur le repertoire correspondant a son oeuvre 
 Utilisateur -> Application: Renseigne la référence correspondant a l’oeuvre qu’il possede
 Utilisateur -> Application: Clique sur echanger
 
-database Database
+database dépôt
 
-Application -> Database: Verifie les idantifiants et mot de passe de l’utilisateur
-Application -> Database: Verifie les ID de l'oeuvre inscrit par l’utilisateur
+Application -> dépôt: Verifie les idantifiants et mot de passe de l’utilisateur
+Application -> dépôt: Verifie les ID de l'oeuvre inscrit par l’utilisateur
 
-Database --> Application: renvoie une reponse d'authentification
-Database --> Application: renvoie une reponse de vérification de l'ID de l'oeuvre
+dépôt --> Application: renvoie une reponse d'authentification
+dépôt --> Application: renvoie une reponse de vérification de l'ID de l'oeuvre
 
 Application --> Utilisateur: Renvoie la réponse d'authentification de l'utilisateur
 Application --> Utilisateur: Renvoie la réponse de la vérification de l'ID de l'oeuvre inscrit par l'utilisateur
