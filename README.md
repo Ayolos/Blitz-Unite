@@ -18,7 +18,7 @@ Lors du projet nous avons utilisé des outils techniques tels que **PlantUML** p
 
 Pour réaliser ses différents moyens techniques et mettre en place ces méthodes, l'équipe de Blitz Unite composé de Rémi Fraszczak, Antonin Sanzovo, Antoine Andre et  Lucas Carlier on réfléchit à trouver la meilleur solution possible pour répondre au besoin de CultureDiffusion.
 
-Conçu par Rémi Fraszczak, Antonin Sanzovo, Antoine Andre, Lucas Carlier de Blitz Unite.
+Conçu par Rémi Fraszczak, Antonin Sanzovo, Antoine Andre, Guillaume Delorme et Lucas Carlier de Blitz Unite.
 
 Version v0.1
 
