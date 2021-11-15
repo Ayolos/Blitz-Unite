@@ -4,7 +4,7 @@ actor bibliothecaire
 bibliothecaire -> Application : Authentification Request
 Application -> bibliothecaire : Authentification Response
 
-database database
+
 
 bibliothecaire -> Application : Oeuvres Request
 Application -> bibliothècaire : Oeuvres Response
@@ -14,7 +14,7 @@ Application -> bibliothecaire : Oeuvres Display Filtre
 
 
 bibliothecaire -> Application : Select Fichier
-Application -> database : Request Infos Fichier
+Application -> depot: Request Infos Fichier
 database -> Application : Response Info Fichier
 Application -> bibliothecaire : Display Infos Fichier
 
@@ -23,6 +23,6 @@ bibliothecaire -> bibliothecaire : Parcour Fichier
 bibliothecaire -> bibliothecaire : Complete Infos Fichier
 
 bibliothecaire -> Application : Valide Fichier
-Application -> database : Valide Fichier
+Application -> depot: Valide Fichier
 Application -> database : Deplace Fichier
 @enduml
