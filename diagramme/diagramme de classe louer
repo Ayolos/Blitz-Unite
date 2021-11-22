@@ -1,0 +1,40 @@
+@startuml
+class Connexion
+class Séquestre
+class Oeuvre
+class Application
+
+Connexion : vérifier()
+
+Oeuvre : type : String
+Oeuvre : nom : String
+Oeuvre : droit : String
+Oeuvre : verifierDroit()
+
+Utilisateur : connexion()
+Utilisateur : nom : String
+Utilisateur : prénom : Stirng
+Utilisateur : rôle : String 
+
+Application : lancement()
+Application : sendMessage()
+
+Séquestre : chiffrer()
+Séquestre : chiffrer : bool
+Séquestre : louer()
+Séquestre : supprimer()
+
+OeuvreSousDroit : nbCopies : int
+OeuvreSousDroit : vérifierNbCopies()
+OeuvreSousDroit : dateValidité : Date
+OeuvreSousDroit : vérifierDateValidité()
+
+Connexion -left- Application
+Connexion - Utilisateur
+Oeuvre *--up Application : détient
+Application -* Utilisateur
+Séquestre -* Oeuvre
+Oeuvre --|> OeuvrePublique
+Oeuvre --|> OeuvreSousDroit
+Oeuvre *-* Utilisateur : empruntent
+@enduml
