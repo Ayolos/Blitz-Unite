@@ -6,21 +6,27 @@ class Connexion
 Connexion : sendFile()
 
 Oeuvre : connexion()
-Oeuvre : type
-Oeuvre : nom
+Oeuvre : type : String
+Oeuvre : nom : String
+Oeuvre : vérifié : bool
+Oeuvre : ajouterOeuvre()
+Oeuvre : ajouterDansAModérer()
+Oeuvre : chiffer()
 
 Utilisateur : connexion()
-Utilisateur : nom
-Utilisateur : prénom
-Utilisateur : rôle
+Utilisateur : lireOeuvre()
+Utilisateur : vérifierOeuvre()
+Utilisateur ; modifierOeuvre()
+Utilisateur : nom : String
+Utilisateur : prénom : Stirng
+Utilisateur : rôle : String 
 
 Application : lancement()
 Application : genJSON()
 Application : sendMessage()
 
-Connexion - Oeuvre
-Connexion - Application
+Connexion -down- Application : possède
 Connexion - Utilisateur
-Oeuvre *- Application
+Oeuvre *- Application : détient
 Application -* Utilisateur
 @enduml
