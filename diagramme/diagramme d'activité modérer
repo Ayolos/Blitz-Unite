@@ -1,0 +1,25 @@
+@startuml
+|Bibliothécaire|
+start
+note right : se connecter
+: Accès Oeuvres;
+: Choix Oeuvre;
+|Application|
+:Display Oeuvre;
+|Bibliothécaire|
+:Select Oeuvre;
+|Application|
+:Display Oeuvre;
+|Bibliothécaire|
+: Check Oeuvre;
+if (IsAcceptable) then (ok)
+else (not acceptable)
+end
+note left : supprimer
+ENDif
+:IsMorerate;
+|Application|
+:Valide;
+:ChangeFolder;
+end
+@enduml
