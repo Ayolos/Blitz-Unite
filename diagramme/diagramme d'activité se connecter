@@ -9,7 +9,7 @@ if () then (failure = 3)
 end
 
 else (failure < 3)
-:Enter password;
+:Enter password and authentifiant;
 ENDif
 backward : failure++;
 repeat while(Submit) is (password wrong) not (password ok)
