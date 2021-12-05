@@ -1,0 +1,28 @@
+@startuml
+partition Utilisateur {
+  (*) --> "se connecter"
+--> accède formulaire soumission
+--> remplit le formulaire et fournit le fichier
+
+if formulaire complet avec fichier then 
+-->[true] "génère fichier json"
+else
+-->[false] accède formulaire soumission
+}
+
+partition Application {
+"génère fichier json" --> ajoutée dans répertoire 'à modérer'
+"chiffrage" --> (*)
+}
+
+partition Bibliothécaire {
+"ajoutée dans répertoire 'à modérer'" --> "lit oeuvre"
+--> "vérifie la véracité de l'oeuvre"
+if "tout est correct" then
+--> [true] "chiffrage"
+else
+--> [false] modifie information 
+--> "vérifie la véracité de l'oeuvre"
+
+}
+@enduml
