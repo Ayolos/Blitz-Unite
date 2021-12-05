@@ -1,0 +1,15 @@
+@startuml
+actor Utilisateur
+
+Utilisateur -> Application :Requete d'authentification
+Application -> Utilisateur : Reponse d'authentification
+
+database dépôt
+
+Application -> database : Requête pour détecter les emprunts expirés
+dépôt -> Application : Informe qu'un emprunt à expiré
+Application -> database : Requête pour supprimer l'oeuvre concerné du repertoire du membre 
+dépôt -> dépôt : Supprime l'oeuvre du repertoire du membre
+dépôt -> Application : Confirmation suppression de l'oeuvre
+Application -> Utilisateur : Notifie que l'emprunt à expiré
+@enduml

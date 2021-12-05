@@ -1,0 +1,32 @@
+@startuml
+class Connexion {
+void Verifier()
+}
+class Oeuvre_Non_Veriefie {
+string ChangeFolder()
+}
+class Oeuvre {
+NomOeuvre : string
+TypeOeuvre : string
+string IsModerate()
+}
+
+class Utilisateur {
+Identifiant : string
+password : string
+droit : string
+string Connexion()
+}
+
+class Application {
+string DisplayResults()
+string Oeuvre_Display()
+string Filter()
+string ValideOeuvre()
+}
+
+Utilisateur - Connexion
+Oeuvre_Non_Veriefie -|> Oeuvre
+Utilisateur -> Application
+Application *- Oeuvre
+@enduml

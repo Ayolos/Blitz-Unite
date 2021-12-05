@@ -1,0 +1,37 @@
+@startuml
+partition Utilisateur {
+
+(*) --> "se connecter"
+"se connecter" --> clique sur sequestre
+--> choisir oeuvre
+--> cliquer sur louer
+
+}
+
+partition bibliothèque {
+
+if "Vérifier si membre" then
+  -->[true] "est Membre"
+    if "Vérifier si oeuvre sous droit" then
+      -->[true] "Oeuvre sous droit"
+      if "Vérifier si oeuvre plus de 3 copies" then
+        partition oeuvre {
+          -->[false] "Impossible de louer"
+          --> (*)
+        }
+      else
+        --> [false]"Oeuvre ajouter dans emprunt"
+      endif
+    else
+      --> [false]"Oeuvre ajouter dans emprunt"
+      --> (*)
+
+    endif
+
+else
+  --> [false] "Impossible de louer" 
+
+}
+
+endif
+@enduml

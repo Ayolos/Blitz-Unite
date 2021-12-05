@@ -1,0 +1,16 @@
+@startuml
+actor User
+
+User -> User : Open WebPage
+
+User -> Application : InInterface
+Application -> User : DisplayInterface
+
+User -> Application : Write Logs
+
+database Depot
+
+Application -> Depot : CheckLogs
+Depot -> Application : ValidLogs
+Application -> User : AccesUser
+@enduml

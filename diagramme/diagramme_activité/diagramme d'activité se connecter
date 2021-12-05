@@ -1,0 +1,18 @@
+@startuml
+start
+
+: Connection;
+repeat 
+if () then (failure = 3)
+
+#red:Locked;
+end
+
+else (failure < 3)
+:Enter password and authentifiant;
+ENDif
+backward : failure++;
+repeat while(Submit) is (password wrong) not (password ok)
+
+end
+@enduml
