@@ -1,0 +1,22 @@
+@startuml
+class Oeuvre {
+Nom : string
+Type : string
+string SupprimeOeuvre()
+string VerifieValidite
+}
+
+class Application {
+string lancement()
+string sendmessage()
+}
+
+class Membre {
+Nom : String
+Utilisateur : prénom : String
+}
+
+
+Oeuvre -* Application : détient
+Membre *- Oeuvre : Emprunte
+@enduml
