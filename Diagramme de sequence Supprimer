@@ -1,0 +1,15 @@
+@startuml
+|Application|
+start
+
+: Accès RepertoireMembre;
+
+|Membre|
+if (dateValidite < DateduJour)
+:Supprimer Oeuvre;
+|Application|
+:Oeuvre supprimé;
+end
+Else(Emprunt valide)
+end
+@enduml
