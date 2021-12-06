@@ -1,0 +1,24 @@
+@startuml
+class Utilisateur {
+Identifiant : string
+Password : string
+droit : string
+string Connexion()
+}
+
+class Application {
+string DisplayInterface()
+string CheckLogs()
+string AccesUser()
+}
+
+class Depot {
+Identifiant : Array
+Password : Array
+string ValidLogs()
+}
+
+Utilisateur -> Application
+Application -> Depot
+Depot -> Application
+@enduml
