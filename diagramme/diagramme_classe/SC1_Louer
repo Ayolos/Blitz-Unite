@@ -34,7 +34,7 @@ Connexion - Utilisateur
 Oeuvre *--up Application : détient
 Application -* Utilisateur
 Séquestre -* Oeuvre
-Oeuvre --|> OeuvrePublique
-Oeuvre --|> OeuvreSousDroit
+OeuvrePublique --|> Oeuvre
+OeuvreSousDroit --|> Oeuvre
 Oeuvre *-* Utilisateur : empruntent
 @enduml
