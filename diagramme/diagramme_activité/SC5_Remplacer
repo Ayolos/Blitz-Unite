@@ -1,0 +1,11 @@
+@startuml
+!pragma useVerticalIf on
+start
+:se connecter;
+if (connexion) then (raté)
+  :erreur de connexion;
+   stop
+elseif (choisir oeuvre à remplacer)
+  :id de l'ouvre incorrecte;
+  stop
+@enduml
