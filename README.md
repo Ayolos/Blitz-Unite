@@ -1,17 +1,8 @@
-# Blitz-Unite
+<div align="center">
 
-<<<<<<< HEAD
-Scenatios
-analyse
+![Screenshot](Logo_Blitz_Unite.png)
+</div>
 
-- Titre Projet
-- Objectif 3l
-- Description 10l
-- Context 10l
-- Liste auteur
-- Numéro de version / DATE
-- Liste liens
-=======
 # Bibliothèque numérique
 
 Avec ce projet, l'association CultureDiffusion détiendra une bibliothèque 100% numérique alimentée par ces membres. L'objectif étant que l'association puisse avoir un logiciel de gestion fonctionnel avec le principe du CRUD. Ainsi les membres pourront créer, lire, mettre à jour et supprimer les données qui seront ici, des livres, musiques et vidéos.
@@ -24,7 +15,7 @@ Le projet est un logiciel qui doit permettre de numériser les œuvres disponibl
 
 Lors du projet nous avons utilisé des outils techniques tels que **PlantUML** pour la réalisation des différents diagrammes qui nous aiderons à la conception de ce logiciel. Nous utilisons différentes méthodologies de travail afin de réaliser un projet bien structuré, et qui répond au mieux possible aux exigences de notre client, avec la création de différents scénarios, de design pattern pour nous permettre d'avoir un projet qui repose sur des bases solides et ainsi que des différents diagrammes :
 
-  - diagramme de cas d'utilisations
+  - diagramme d'activité
   - diagramme de séquence
   - diagramme de classes
 

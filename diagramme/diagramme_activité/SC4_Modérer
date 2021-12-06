@@ -1,21 +1,21 @@
 @startuml
-|Bibliothécaire|
+|Librarian|
 start
-note right : se connecter
-: Accès Oeuvres;
-: Choix Oeuvre;
+note right : Connect
+: Access Oeuvres;
+: Choice Oeuvre;
 |Application|
 :Display Oeuvre;
-|Bibliothécaire|
+|Librarian|
 :Select Oeuvre;
 |Application|
 :Display Oeuvre;
-|Bibliothécaire|
+|Librarian|
 : Check Oeuvre;
 if (IsAcceptable) then (ok)
 else (not acceptable)
 end
-note left : supprimer
+note left : Delete
 ENDif
 :IsMorerate;
 |Application|
