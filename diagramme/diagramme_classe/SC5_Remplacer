@@ -1,0 +1,41 @@
+@startuml
+class Oeuvre
+{
+id : int
+titre : string
+genre : string
+date de sortie : date
+}
+
+class Utilisateur 
+{
+id : int
+nom : string
+prenom : string
+adresse mail : string
+adresse : string
+numero de telephone : int
+}
+
+class Connexion
+{
+
+}
+
+class Application
+{
+id : int
+nom : string
+liste des oeuvres : string
+}
+
+Utilisateur "0..*" -> Application : utiliser
+Utilisateur <- "1..1" Application : gérer
+Utilisateur "0..*" <--> "1..*" Oeuvre : emprunter, etre emprunté
+Utilisateur "0..*"-> Connexion : se connecte
+Utilisateur <- "0..1" Connexion : renvoyer une réponse
+Application "1..*" -> Connexion : vérifier utilisateur
+Application <- "0..1" Connexion : demande de connexion
+Oeuvre <-- "1..*" Application : posseder
+Oeuvre "1..1" --> Application : être associé
+@enduml
