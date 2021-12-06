@@ -1,14 +1,7 @@
-# Blitz-Unite
+<div align="center">
 
 ![Screenshot](Logo_Blitz_Unite.png)
-
-- Titre Projet
-- Objectif 3l
-- Description 10l
-- Context 10l
-- Liste auteur
-- Numéro de version / DATE
-- Liste liens
+</div>
 
 # Bibliothèque numérique
 
